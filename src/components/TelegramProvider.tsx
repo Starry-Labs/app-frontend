@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Script from "next/script";
 import { LoadingSpinner } from "./LoadingSpinner";
-import { MainApp } from "./MainApp";
+import { Onboarding } from "./Onboarding";
 
 export function TelegramProvider() {
   const [isScriptLoaded, setIsScriptLoaded] = useState(false);
@@ -22,7 +22,7 @@ export function TelegramProvider() {
   }
 
   if (isDevelopment) {
-    return <MainApp />;
+    return <Onboarding />;
   }
 
   return (
@@ -32,7 +32,7 @@ export function TelegramProvider() {
         onLoad={() => setIsScriptLoaded(true)}
         strategy="afterInteractive"
       />
-      {isScriptLoaded ? <MainApp /> : <LoadingSpinner />}
+      {isScriptLoaded ? <Onboarding /> : <LoadingSpinner />}
     </>
   );
 }

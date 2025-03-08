@@ -18,7 +18,7 @@ export function ShareInvite() {
 
   const generateInviteLink = () => {
     // In a real application, this would generate a unique link
-    const newLink = `https://starrylabs.com/invite/${Math.random().toString(36).substr(2, 9)}`;
+    const newLink = `https://web3astrology.com/invite/${Math.random().toString(36).substr(2, 9)}`;
     setInviteLink(newLink);
   };
 

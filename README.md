@@ -48,6 +48,10 @@ To get a local copy up and running, follow these steps:
 - `public/`: Static assets
 - `styles/`: Global styles and Tailwind CSS configuration
 
+## Downloading Shadcn Dependencies
+   ```
+   npx shadcn@latest add [component-name]
+   ```
 
 ## License
 
